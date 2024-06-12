@@ -6,7 +6,7 @@ public class Calculator {
         return x + y;
     }
 
-    public int substract(int x, int y){
+    public int subtract(int x, int y){
         return x - y;
     }
     public int multiply(int x, int y){
@@ -20,5 +20,9 @@ public class Calculator {
             sum += number;
         }
         return sum;
+    }
+
+    public boolean isEven(int x){
+        return x%2==0;
     }
 }
