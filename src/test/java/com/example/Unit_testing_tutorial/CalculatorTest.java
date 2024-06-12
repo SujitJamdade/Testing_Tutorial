@@ -1,8 +1,6 @@
 package com.example.Unit_testing_tutorial;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 public class CalculatorTest {
 
@@ -11,6 +9,11 @@ public class CalculatorTest {
     @BeforeAll
     public static  void setup(){
         System.out.println("This is executed before the test class is loaded");
+    }
+
+    @BeforeEach
+    public void beforeEveryTest(){
+        System.out.println("This is executed before the every test");
     }
 
     @Test
@@ -60,4 +63,11 @@ public class CalculatorTest {
         int expected = 21;
         Assertions.assertEquals(expected,actual);
     }
+
+    @AfterAll
+    public static void cleanup(){
+        System.out.println("This is executed after the test class is loaded");
+    }
 }
+
+
