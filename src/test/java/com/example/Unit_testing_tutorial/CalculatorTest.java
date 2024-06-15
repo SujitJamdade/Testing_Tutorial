@@ -56,7 +56,7 @@ public class CalculatorTest {
         Assertions.assertEquals(expected,actual);
     }
 
-    @Test // testing the sum of multiple number
+    @Test // testing the sum of mulgittiple number
     public void testSumOfMultipleNo(){
         System.out.println("Test 6");
         int actual = cal.SumOfMultipleNo(1,2,3,4,5,6);
